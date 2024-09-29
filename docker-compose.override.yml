@@ -1,0 +1,32 @@
+services:
+
+  gradio:
+    build:
+      dockerfile: Dockerfile.dev
+    volumes:
+      # do not mount .venv to avoid scanning
+      - ./services/gradio/src:/app/src
+      - ./services/gradio/assets:/app/assets
+    environment:
+      - "LOG_LEVEL=INFO"
+
+  # backend:
+  #   build:
+  #     dockerfile: Dockerfile.dev
+  #   volumes:
+  #     - ./services/backend/src:/app/src
+  #   ports:
+  #     - "5678:5678" # debugger
+  #   environment:
+  #     - "LOG_LEVEL=INFO"
+
+  # postgres:
+  #   ports:
+  #     - "5432:5432" # direct access
+  
+  # migrations:
+  #   build:
+  #     dockerfile: Dockerfile.dev
+  #   user: ${MY_UID:-1000}:${MY_GID:-1000}
+  #   volumes:
+  #     - ./services/migrations/:/db/:rw

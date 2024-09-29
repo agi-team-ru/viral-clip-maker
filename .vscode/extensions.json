@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "ms-python.black-formatter",
+        "ms-pyright.pyright",
+        "ms-python.python",
+        "ms-python.debugpy",
+        "vue.volar"
+    ]
+}

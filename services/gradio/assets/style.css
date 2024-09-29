@@ -1,0 +1,40 @@
+.app-header {
+  display: flex;
+}
+.app-header .logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+}
+.app-header h1 {
+  margin: 0;
+}
+footer {
+  display: none !important;
+}
+.dev-mode-banner {
+  color: darkred;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+  border: 5px darkorange dashed;
+  background: white;
+}
+.spinner {
+  height: 32px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.scrollable-block{
+  max-height: 240px;
+  overflow: auto;
+  box-shadow: var(--block-shadow);
+  border-width: var(--block-border-width);
+  border-color: var(--block-border-color);
+  border-radius: var(--block-radius);
+  background: var(--block-background-fill);
+  line-height: var(--line-sm);
+  padding: 12px;
+  margin-bottom: 24px;
+}

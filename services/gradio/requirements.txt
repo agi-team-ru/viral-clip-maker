@@ -1,0 +1,8 @@
+uvicorn==0.30.6
+gradio==4.44.0
+moviepy==1.0.3
+openai==1.49.0
+vidgear==0.3.3
+opencv-python==4.10.0.84
+scenedetect[opencv]==0.6.4
+mediapipe==0.10.15

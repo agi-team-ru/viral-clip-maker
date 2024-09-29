@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Gradio Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/services/gradio",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5678
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/services/backend",
+          "remoteRoot": "/app"
+        },
+        {
+          "localRoot": "${workspaceFolder}/services/backend/.venv/lib/python3.12/site-packages",
+          "remoteRoot": "/usr/local/lib/python3.12/site-packages"
+        }
+      ]
+    }
+  ]
+}
